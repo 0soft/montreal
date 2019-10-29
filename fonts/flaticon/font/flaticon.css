@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 26/10/2019 20:00
+  	Creation date: 29/10/2019 11:00
   	*/
 
 @font-face {
@@ -37,3 +37,4 @@ margin-left: 20px;
 .flaticon-packaging:before { content: "\f104"; }
 .flaticon-ink:before { content: "\f105"; }
 .flaticon-membership:before { content: "\f106"; }
+.flaticon-wifi:before { content: "\f107"; }
