@@ -1,8 +1,7 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 04/01/2019 13:45
+  	Creation date: 26/10/2019 20:00
   	*/
-
 
 @font-face {
   font-family: "Flaticon";
@@ -31,15 +30,16 @@
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-ideas:before { content: "\f100"; }
-.flaticon-flasks:before { content: "\f101"; }
-.flaticon-analysis:before { content: "\f102"; }
-.flaticon-ux-design:before { content: "\f103"; }
-.flaticon-web-design:before { content: "\f104"; }
-.flaticon-idea:before { content: "\f105"; }
-.flaticon-innovation:before { content: "\f106"; }
+.flaticon-flyer:before { content: "\f100"; }
+.flaticon-notebook:before { content: "\f101"; }
+.flaticon-stamp:before { content: "\f102"; }
+.flaticon-businessman:before { content: "\f103"; }
+.flaticon-packaging:before { content: "\f104"; }
+.flaticon-ink:before { content: "\f105"; }
+.flaticon-membership:before { content: "\f106"; }
+.flaticon-wifi:before { content: "\f107"; }
