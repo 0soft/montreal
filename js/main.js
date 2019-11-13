@@ -35,7 +35,7 @@
 			}
 		}, 1);
 	};
-	loader();
+  //loader();
 
 	// Scrollax
    $.Scrollax();
@@ -154,8 +154,8 @@
 		});
 
 	};
-	carousel();
-
+  //carousel();
+  
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		// 	 timer;
@@ -316,7 +316,22 @@
     fixedContentPos: false
   });
 
-
+  $.ajax('https://sheet.best/api/drives/13d77649-e90f-48f9-ae74-e45cdee6955e', {success:function(data) {
+    var html = '';
+    for(var i=0, len=data.length; i<len; i++){
+      html+= '<div class="slider-item">'+
+             '<div class="overlay"></div>'+
+             '<div class="container-fluid p-0">'+
+             '<div class="row d-md-flex no-gutters slider-text" data-scrollax-parent="true">'+
+             '<img src="'+data[i].link+'" height="auto" width="100%">'+
+             '</div>'+
+             '</div>'+
+             '</div>'
+    }
+    $('#banner_container').html(html);
+    carousel();
+    setTimeout(loader, 2000);
+  }});
 
 
 
