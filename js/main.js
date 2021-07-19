@@ -316,7 +316,7 @@
     fixedContentPos: false
   });
 
-	var folder = "./images/banners/";
+	var folder = "../images/banners/";
 	var html = '';
 	$.ajax({
 		url : folder,
