@@ -318,7 +318,7 @@
               '<div class="overlay"></div>'+
               '<div class="container-fluid p-0">'+
               '<div class="row d-md-flex no-gutters slider-text" data-scrollax-parent="true">'+
-              '<img src="https://drive.google.com/uc?export=download&id='+data[i][0]+'" height="auto" width="100%">'+
+              '<img src="https://drive.google.com/uc?id='+data[i][0]+'" height="auto" width="100%">'+
               '</div>'+
               '</div>'+
               '</div>'
