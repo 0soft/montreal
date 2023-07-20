@@ -310,7 +310,7 @@
     fixedContentPos: false
   });
 
-  var folder = "/images/banners/";
+  var folder = "/public/banners/";
  	var html = '';
  	$.ajax({
  		url : folder,
