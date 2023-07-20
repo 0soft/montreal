@@ -310,28 +310,28 @@
     fixedContentPos: false
   });
 
+  var banners = [
+    "0.jpg",
+    "1.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg"
+  ]
   var folder = "/public/banners/";
  	var html = '';
- 	$.ajax({
- 		url : folder,
- 		success: function (data) {
- 			$(data).find("a").attr("href", function (i, val) {
- 				if( val.match(/\.(jpe?g|png|gif)$/) ) {
+ 	for(var i=0; i < banners.length; i++){
  					html+= '<div class="slider-item">'+
  								 '<div class="overlay"></div>'+
  								 '<div class="container-fluid p-0">'+
  								 '<div class="row d-md-flex no-gutters slider-text" data-scrollax-parent="true">'+
- 								 '<img src="'+folder + val+'" height="auto" width="100%">'+
+ 								 '<img src="'+folder + banners[i]+'" height="auto" width="100%">'+
  								 '</div>'+
  								 '</div>'+
  								 '</div>'
- 				} 
- 			});
- 			$('#banner_container').html(html);
- 			carousel();
- 			setTimeout(loader, 2000);
- 		}
- 	});
+ 	}
+  $('#banner_container').html(html);
+ 	carousel();
+ 	setTimeout(loader, 2000);
 
 
 })(jQuery);
