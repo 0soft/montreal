@@ -310,28 +310,28 @@
     fixedContentPos: false
   });
 
-  //var folder = "/images/banners/";
- 	//var html = '';
- 	//$.ajax({
- 	//	url : folder,
- 	//	success: function (data) {
- 	//		$(data).find("a").attr("href", function (i, val) {
- 	//			if( val.match(/\.(jpe?g|png|gif)$/) ) {
- 	//				html+= '<div class="slider-item">'+
- 	//							 '<div class="overlay"></div>'+
- 	//							 '<div class="container-fluid p-0">'+
- 	//							 '<div class="row d-md-flex no-gutters slider-text" data-scrollax-parent="true">'+
- 	//							 '<img src="'+folder + val+'" height="auto" width="100%">'+
- 	//							 '</div>'+
- 	//							 '</div>'+
- 	//							 '</div>'
- 	//			} 
- 	//		});
- 	//		$('#banner_container').html(html);
- 	//		carousel();
- 	//		setTimeout(loader, 2000);
- 	//	}
- 	//});
+  var folder = "/images/banners/";
+ 	var html = '';
+ 	$.ajax({
+ 		url : folder,
+ 		success: function (data) {
+ 			$(data).find("a").attr("href", function (i, val) {
+ 				if( val.match(/\.(jpe?g|png|gif)$/) ) {
+ 					html+= '<div class="slider-item">'+
+ 								 '<div class="overlay"></div>'+
+ 								 '<div class="container-fluid p-0">'+
+ 								 '<div class="row d-md-flex no-gutters slider-text" data-scrollax-parent="true">'+
+ 								 '<img src="'+folder + val+'" height="auto" width="100%">'+
+ 								 '</div>'+
+ 								 '</div>'+
+ 								 '</div>'
+ 				} 
+ 			});
+ 			$('#banner_container').html(html);
+ 			carousel();
+ 			setTimeout(loader, 2000);
+ 		}
+ 	});
 
 
 })(jQuery);
